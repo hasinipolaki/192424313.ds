@@ -1,0 +1,6 @@
+#include<stdio.h>
+int main(){
+char exp[50];
+scanf("%s",exp);
+printf("%s",exp);
+}
