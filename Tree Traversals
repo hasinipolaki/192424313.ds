@@ -1,0 +1,4 @@
+#include<stdio.h>
+struct node{int d;struct node*l,*r;};
+void inorder(struct node*t){if(t){inorder(t->l);printf("%d ",t->d);inorder(t->r);}}
+int main(){}
