@@ -1,0 +1,10 @@
+#include<stdio.h>
+int q[20],f=0,r=-1;
+int main(){
+int ch,x;
+while(1){
+scanf("%d",&ch);
+if(ch==1){scanf("%d",&x);q[++r]=x;}
+else if(ch==2)printf("%d",q[f++]);
+else break;
+}}
