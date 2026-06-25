@@ -1,0 +1,9 @@
+#include<stdio.h>
+#include<stdlib.h>
+struct node{int d;struct node*next;}*h=NULL,*t=NULL,*p;
+int main(){
+int n,x,i; scanf("%d",&n);
+for(i=0;i<n;i++){scanf("%d",&x);p=malloc(sizeof(struct node));p->d=x;p->next=NULL;
+if(h==NULL)h=t=p;else{t->next=p;t=p;}}
+for(p=h;p!=NULL;p=p->next)printf("%d ",p->d);
+}
